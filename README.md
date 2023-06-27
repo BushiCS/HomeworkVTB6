@@ -19,15 +19,15 @@ Math.cos(0.4f + i / 2));
 8) Проверяется время окончания метода System.currentTimeMillis();
    
 10) В консоль выводится время работы:
-    ```java
-    System.out.println(System.currentTimeMillis() - a);
-    ```
+```java
+System.out.println(System.currentTimeMillis() - a);
+```
 Отличие первого метода от второго:
 ● Первый просто бежит по массиву и вычисляет значения.
 ● Второй разбивает массив на два массива, в двух потоках высчитывает новые значения и
 потом склеивает эти массивы обратно в один.
 Пример деления одного массива на два:
 ```java
- System.arraycopy(arr, 0, a1, 0, h);
- System.arraycopy(arr, h, a2, 0, h).
+System.arraycopy(arr, 0, a1, 0, h);
+System.arraycopy(arr, h, a2, 0, h).
 ```
